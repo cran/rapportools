@@ -10,7 +10,7 @@
 #' rp.outlier(c(rep(1,100), 200,201))
 #' }
 #' @references {
-#' Credit goes to PaulHurleyuk: \url{http://stackoverflow.com/a/1444548/564164}
+#' Credit goes to PaulHurleyuk: \url{https://stackoverflow.com/a/1444548/564164}
 #'
 #' \itemize{
 #'  \item Lund, R. E. 1975, "Tables for An Approximate Test for Outliers in Linear Models", Technometrics, vol. 17, no. 4, pp. 473-476.
@@ -18,6 +18,7 @@
 #' }
 #' }
 #' @export
+#' @importFrom stats qf lm rstandard
 rp.outlier <- function(x) {
     if (!is.numeric(x)) stop('Wrong variable type (!numeric) provided.')
 
@@ -29,14 +30,14 @@ rp.outlier <- function(x) {
         ## n = Number of data elements
         ## q = Number of independent Variables (including intercept)
         ## --------------------------------------------------------------
-        ## Credit goes to PaulHurleyuk: \url{http://stackoverflow.com/a/1444548/564164}
+        ## Credit goes to PaulHurleyuk: \url{https://stackoverflow.com/a/1444548/564164}
         F<-qf(c(1-(a/n)),df1=1,df2=n-q-1,lower.tail=TRUE)
         crit<-((n-q)*F/(n-q-1+F))^0.5
         crit
     }
 
     model <- lm(x ~ 1)
-    crit <- suppressWarnings(lundcrit(0.1, length(x), model$coefficients))
+    crit <- suppressWarnings(lundcrit(0.1, length(x), length(model$coefficients)))
     if (!is.na(crit))
         return(x[which(abs(rstandard(model)) > crit)])
     else
