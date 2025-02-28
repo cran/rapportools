@@ -1,6 +1,6 @@
-4703627a162175a540a8428e8937472e *DESCRIPTION
+522d675685ef157e859747d4cf473010 *DESCRIPTION
 aeaf4e48c126a7b220da7a23b38a642d *NAMESPACE
-e4ba66278b59b1ec32dc94e60e8757a2 *NEWS
+9c8697a66a084db44c17ffc170c9f58f *NEWS
 d1cf52700a135580e5ff5a10a6bb97d4 *R/htest.R
 0047563876b6b636a1fbc8d59c855426 *R/init.R
 b51387a89805b23bece8255c324f32de *R/kurtosis.R
@@ -10,9 +10,8 @@ b7453a5916f62a68fb2dc37453003bd5 *R/outlier.R
 4583647a8eb7a9be7a9de0dac8f3ce3c *R/strwidth.R
 b978e0e2d408172e19f693f0b8a62470 *R/tables.R
 64faae529c0fe3c217e898359ac10b12 *R/textual.R
-aa452581e7cf0093c19e231b7f2f72a6 *R/univar.R
-6d53d3bb9be55d511a7057efbeac9cf4 *R/utils.R
-73ac223bde77e35320f4b6fc64eaa47c *inst/CITATION
+ecaabab84e58665a27137534b93d3974 *R/univar.R
+c2487391fb845ca90526301d529913db *R/utils.R
 699fc2c272213485f6a6b60359250301 *inst/tests/test-stat_helpers.R
 d41d8cd98f00b204e9800998ecf8427e *inst/tests/test-tables.R
 6becdc2e92635cd4b928ca88e554f40d *man/adj.rle.Rd
@@ -34,11 +33,11 @@ d4d4af2e0134825f71a1f6b9dd4746cf *man/kurtosis.Rd
 e0af65ab057e0a7d38c4d21df8a30e26 *man/label-set.Rd
 f134c1beb6a95c549013b0d943baa16a *man/label.Rd
 0b606d13ff2b9184c2356125be67b51c *man/lambda.test.Rd
-35fd71f4b5f9690faca3ba5f9d4b7aca *man/max.Rd
+fab52af9021710e722e90d033df92b11 *man/max.Rd
 515a16ce21f211fd11d350d4476c72fa *man/mean.Rd
 8eea2ecc68fbcf9144b6f152f9976cf6 *man/median.Rd
 21c9089140a4aad9fcadc50e63a494f8 *man/messagef.Rd
-ee207fcaa3f4cb1becf1784d83f0e206 *man/min.Rd
+8e3502b7ecafe35a7f493d7795580526 *man/min.Rd
 f64a527ab5438f41c9798268520f4db4 *man/n.Rd
 60c6655c21a915a964eb7dff99b6c5de *man/name.Rd
 92e117d566220f15b8a13bdccdd45909 *man/nmissing.Rd
